@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="205dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="9dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="339dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="自己的蛋"
+                android:textAlignment="textEnd"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/mine"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="338dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="其他的蛋"
+                android:textAlignment="textEnd"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/others"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/hu"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="自己胡"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="60sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="433dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/zhuang"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:text="庄"
+                android:textSize="25sp" />
+
+            <Switch
+                android:id="@+id/zhan"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:text="站立"
+                android:textSize="25sp" />
+
+            <Switch
+                android:id="@+id/qing"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:text="清一色"
+                android:textSize="25sp" />
+
+            <Switch
+                android:id="@+id/zimo"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:text="自摸"
+                android:textSize="25sp" />
+
+            <Switch
+                android:id="@+id/jia"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:text="夹胡"
+                android:textSize="25sp" />
+
+            <Switch
+                android:id="@+id/piao"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:text="飘"
+                android:textSize="25sp" />
+
+            <Switch
+                android:id="@+id/dian"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:text="一家点炮"
+                android:textSize="25sp" />
+
+            <Switch
+                android:id="@+id/zd"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:text="庄点炮"
+                android:textSize="25sp" />
+
+            <Switch
+                android:id="@+id/bao"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:text="宝"
+                android:textSize="25sp" />
+
+            <Switch
+                android:id="@+id/tong"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:text="通宝"
+                android:textSize="25sp" />
+
+            <Switch
+                android:id="@+id/qi"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:text="七小对"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
