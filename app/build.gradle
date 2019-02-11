@@ -6,8 +6,8 @@ android {
         applicationId "xyz.dalk.quq"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 2
-        versionName "1.919.810"
+        versionCode 3
+        versionName "11.4514"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

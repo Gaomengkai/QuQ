@@ -1,6 +1,6 @@
 package xyz.dalk.quq;
 
-import android.annotation.SuppressLint;
+//import android.annotation.SuppressLint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -30,10 +30,10 @@ public class MainActivity extends AppCompatActivity {
     public EditText wodan;
     public EditText tadan;
     public TextView score = null;
-    boolean dianpao = false;
-    boolean hu = false;
-    boolean zdp = false;
-    boolean z = false;
+    public boolean dianpao = false;
+    public boolean hu = false;
+    public boolean zdp = false;
+    public boolean z = false;
 
     int[] fcuk = {0,0,0,0,0,0,0,0,0};
 
@@ -235,40 +235,40 @@ public class MainActivity extends AppCompatActivity {
             pw+=fcuk[i];
         }
         int base = (int)Math.pow(2,pw);
-        int scoreHere = 0;
+        int scoreHere;
         if(hu){
             if(zdp){
-                scoreHere+=6*base;
+                scoreHere=6*base;
             }
             else{
                 if(dianpao){
                     if(z){
-                        scoreHere+=8*base;
+                        scoreHere=8*base;
                     }
                     else{
-                        scoreHere+=5*base;
+                        scoreHere=5*base;
                     }
                 }else{
                     //前面自摸已经算过翻倍了，所以此处不乘自摸
                     if(z){
-                        scoreHere+=6*base;
+                        scoreHere=6*base;
                     }else{
-                        scoreHere+=4*base;
+                        scoreHere=4*base;
                     }
                 }
             }
         }else{
             if(dianpao){
                 if(z){
-                    scoreHere-=4*base;
+                    scoreHere=-4*base;
                 }else{
-                    scoreHere-=2*base;
+                    scoreHere=-2*base;
                 }
             }else{
                 if(z){
-                    scoreHere-=2*base;
+                    scoreHere=-2*base;
                 }else{
-                    scoreHere-=base;
+                    scoreHere=-base;
                 }
             }
         }
@@ -276,6 +276,10 @@ public class MainActivity extends AppCompatActivity {
         scoreHere-=others;
         String s =String.valueOf(scoreHere);
         score.setText(s);
+    }
+
+    public void refresh_hu(){
+
     }
 
 }
